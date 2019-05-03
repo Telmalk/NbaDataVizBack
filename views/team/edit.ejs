@@ -1,0 +1,28 @@
+<div class="">
+  <h1>New team</h1>
+
+  <div class="body">
+    <form class="" action="/team/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_team</label>
+          <input type="number" name="id_team" value="<%= element.id_team %>" required="true">
+        </div>
+        <div class="">
+          <label for="">name</label>
+          <input type="text" name="name" value="<%= element.name %>" required="true">
+        </div>
+        <div class="">
+          <label for="">logo</label>
+          <input type="text" name="logo" value="<%= element.logo %>" required="true">
+        </div>
+        <div class="">
+          <label for="">short_name</label>
+          <input type="text" name="short_name" value="<%= element.short_name %>" required="true">
+        </div>
+      <button type="submit">Update team</button>
+    </form>
+    <br />
+    <a href="/team">Index</a>
+  </div>
+</div>

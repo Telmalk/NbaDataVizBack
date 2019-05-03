@@ -1,0 +1,32 @@
+<div class="">
+  <h1>New players</h1>
+
+  <div class="body">
+    <form class="" action="/players/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_players</label>
+          <input type="number" name="id_players" value="<%= element.id_players %>" required="true">
+        </div>
+        <div class="">
+          <label for="">name</label>
+          <input type="text" name="name" value="<%= element.name %>" required="true">
+        </div>
+        <div class="">
+          <label for="">college</label>
+          <input type="text" name="college" value="<%= element.college %>" required="false">
+        </div>
+        <div class="">
+          <label for="">birthdate</label>
+          <input type="text" name="birthdate" value="<%= element.birthdate %>" required="true">
+        </div>
+        <div class="">
+          <label for="">pictures</label>
+          <input type="text" name="pictures" value="<%= element.pictures %>" required="false">
+        </div>
+      <button type="submit">Update players</button>
+    </form>
+    <br />
+    <a href="/players">Index</a>
+  </div>
+</div>

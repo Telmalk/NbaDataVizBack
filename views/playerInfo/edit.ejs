@@ -1,0 +1,76 @@
+<div class="">
+  <h1>New playerInfo</h1>
+
+  <div class="body">
+    <form class="" action="/playerInfo/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_player_info</label>
+          <input type="number" name="id_player_info" value="<%= element.id_player_info %>" required="true">
+        </div>
+        <div class="">
+          <label for="">age</label>
+          <input type="number" name="age" value="<%= element.age %>" required="true">
+        </div>
+        <div class="">
+          <label for="">position</label>
+          <input type="text" name="position" value="<%= element.position %>" required="true">
+        </div>
+        <div class="">
+          <label for="">numero</label>
+          <input type="number" name="numero" value="<%= element.numero %>" required="true">
+        </div>
+        <div class="">
+          <label for="">weight</label>
+          <input type="number" name="weight" value="<%= element.weight %>" required="true">
+        </div>
+        <div class="">
+          <label for="">height</label>
+          <input type="number" name="height" value="<%= element.height %>" required="true">
+        </div>
+        <div class="">
+          <label for="">experience</label>
+          <input type="number" name="experience" value="<%= element.experience %>" required="true">
+        </div>
+        <div class="">
+          <label for="">headshot</label>
+          <input type="text" name="headshot" value="<%= element.headshot %>" required="true">
+        </div>
+        <div class="">
+          <label for="">minute_played</label>
+          <input type="number" name="minute_played" value="<%= element.minute_played %>" required="true">
+        </div>
+        <div class="">
+          <label for="">two_points</label>
+          <input type="number" name="two_points" value="<%= element.two_points %>" required="true">
+        </div>
+        <div class="">
+          <label for="">three_points</label>
+          <input type="number" name="three_points" value="<%= element.three_points %>" required="true">
+        </div>
+        <div class="">
+          <label for="">block</label>
+          <input type="number" name="block" value="<%= element.block %>" required="true">
+        </div>
+        <div class="">
+          <label for="">turnover</label>
+          <input type="number" name="turnover" value="<%= element.turnover %>" required="true">
+        </div>
+        <div class="">
+          <label for="">player_infocol</label>
+          <input type="text" name="player_infocol" value="<%= element.player_infocol %>" required="true">
+        </div>
+        <div class="">
+          <label for="">id_team</label>
+          <input type="number" name="id_team" value="<%= element.id_team %>" required="true">
+        </div>
+        <div class="">
+          <label for="">id_player</label>
+          <input type="number" name="id_player" value="<%= element.id_player %>" required="true">
+        </div>
+      <button type="submit">Update playerInfo</button>
+    </form>
+    <br />
+    <a href="/playerInfo">Index</a>
+  </div>
+</div>

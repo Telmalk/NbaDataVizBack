@@ -1,0 +1,20 @@
+<div class="">
+  <h1>New season</h1>
+
+  <div class="body">
+    <form class="" action="/season/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_season</label>
+          <input type="number" name="id_season" value="<%= element.id_season %>" required="true">
+        </div>
+        <div class="">
+          <label for="">year</label>
+          <input type="text" name="year" value="<%= element.year %>" required="true">
+        </div>
+      <button type="submit">Update season</button>
+    </form>
+    <br />
+    <a href="/season">Index</a>
+  </div>
+</div>

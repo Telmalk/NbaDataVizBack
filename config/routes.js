@@ -20,6 +20,23 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  // Players
+  "GET /api/player/stat/:id/:season": {},
+  "GET /api/player/all/info/": "PlayersController.index",
+  "POST /player/info/add": {},
+  "POST /player/add": {},
+
+  // Teams
+  "POST /team/add": {},
+  "POST /team/stat/add": {},
+  "GET /api/team/stat/:season": {},
+  "GET /api/team/all": "SeasonController.create",
+
+  // Season
+  "POST /season/add": {},
+
+  // Search
+  "GET /search/:slug": {}
 
 
   /***************************************************************************

@@ -1,0 +1,20 @@
+<div class="">
+  <h1>New joinTeamStatSeason</h1>
+
+  <div class="body">
+    <form class="" action="/joinTeamStatSeason/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_season</label>
+          <input type="number" name="id_season" value="<%= element.id_season %>" required="true">
+        </div>
+        <div class="">
+          <label for="">id_team_stat</label>
+          <input type="number" name="id_team_stat" value="<%= element.id_team_stat %>" required="true">
+        </div>
+      <button type="submit">Update joinTeamStatSeason</button>
+    </form>
+    <br />
+    <a href="/joinTeamStatSeason">Index</a>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+<h1>playerInfo</h1>
+
+
+<% if (result.length == 0) { %>
+  <h4>
+    0 playerInfo
+  </h4>
+<% } else { %>
+<table>
+	<thead>
+    <th>#</th>
+		<th>id</th>
+			<th>id_player_info</th>
+			<th>age</th>
+			<th>position</th>
+			<th>numero</th>
+			<th>weight</th>
+			<th>height</th>
+			<th>experience</th>
+			<th>headshot</th>
+			<th>minute_played</th>
+			<th>two_points</th>
+			<th>three_points</th>
+			<th>block</th>
+			<th>turnover</th>
+			<th>player_infocol</th>
+			<th>id_team</th>
+			<th>id_player</th>
+
+		<th>created at</th>
+		<th>updated at</th>
+		<th colspan="3"></th>
+	</thead>
+
+	<tbody>
+		<% result.forEach((item, i) => { %>
+			<tr>
+				<td>
+					<%= (i + 1) %>
+				</td>
+				<td>
+					<%= item.id %>
+				</td>
+					<td>
+						<%= item.id_player_info %>
+					</td>
+					<td>
+						<%= item.age %>
+					</td>
+					<td>
+						<%= item.position %>
+					</td>
+					<td>
+						<%= item.numero %>
+					</td>
+					<td>
+						<%= item.weight %>
+					</td>
+					<td>
+						<%= item.height %>
+					</td>
+					<td>
+						<%= item.experience %>
+					</td>
+					<td>
+						<%= item.headshot %>
+					</td>
+					<td>
+						<%= item.minute_played %>
+					</td>
+					<td>
+						<%= item.two_points %>
+					</td>
+					<td>
+						<%= item.three_points %>
+					</td>
+					<td>
+						<%= item.block %>
+					</td>
+					<td>
+						<%= item.turnover %>
+					</td>
+					<td>
+						<%= item.player_infocol %>
+					</td>
+					<td>
+						<%= item.id_team %>
+					</td>
+					<td>
+						<%= item.id_player %>
+					</td>
+				<td>
+					<%= item.createdAt %>
+				</td>
+				<td>
+					<%= item.updatedAt %>
+				</td>
+				<td>
+					<a href="/playerInfo/show/<%= item.id %>">Show</a>
+				</td>
+				<td>
+					<a href="/playerInfo/delete/<%= item.id %>">Delete</a>
+				</td>
+        <td>
+					<a href="/playerInfo/edit/<%= item.id %>">Edit</a>
+				</td>
+			</tr>
+			<% }) %>
+	</tbody>
+</table>
+
+<% } %>
+
+<br>
+<a href="/playerInfo/create">New</a>

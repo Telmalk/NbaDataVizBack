@@ -1,0 +1,80 @@
+<div class="">
+  <h1>New statTeam</h1>
+
+  <div class="body">
+    <form class="" action="/statTeam/update" method="post">
+      <input name="id" value="<%= element.id %>" hidden="true" required>
+        <div class="">
+          <label for="">id_stat_team</label>
+          <input type="number" name="id_stat_team" value="<%= element.id_stat_team %>" required="true">
+        </div>
+        <div class="">
+          <label for="">place</label>
+          <input type="number" name="place" value="<%= element.place %>" required="true">
+        </div>
+        <div class="">
+          <label for="">win</label>
+          <input type="number" name="win" value="<%= element.win %>" required="true">
+        </div>
+        <div class="">
+          <label for="">lose</label>
+          <input type="number" name="lose" value="<%= element.lose %>" required="true">
+        </div>
+        <div class="">
+          <label for="">points</label>
+          <input type="number" name="points" value="<%= element.points %>" required="true">
+        </div>
+        <div class="">
+          <label for="">three_points</label>
+          <input type="number" name="three_points" value="<%= element.three_points %>" required="true">
+        </div>
+        <div class="">
+          <label for="">three_points_attemps</label>
+          <input type="number" name="three_points_attemps" value="<%= element.three_points_attemps %>" required="true">
+        </div>
+        <div class="">
+          <label for="">free_throws</label>
+          <input type="number" name="free_throws" value="<%= element.free_throws %>" required="true">
+        </div>
+        <div class="">
+          <label for="">free_throws_attempted</label>
+          <input type="number" name="free_throws_attempted" value="<%= element.free_throws_attempted %>" required="true">
+        </div>
+        <div class="">
+          <label for="">offensive_rebounds</label>
+          <input type="number" name="offensive_rebounds" value="<%= element.offensive_rebounds %>" required="true">
+        </div>
+        <div class="">
+          <label for="">defensive_rebounds</label>
+          <input type="number" name="defensive_rebounds" value="<%= element.defensive_rebounds %>" required="true">
+        </div>
+        <div class="">
+          <label for="">asits</label>
+          <input type="number" name="asits" value="<%= element.asits %>" required="true">
+        </div>
+        <div class="">
+          <label for="">turnover</label>
+          <input type="number" name="turnover" value="<%= element.turnover %>" required="true">
+        </div>
+        <div class="">
+          <label for="">steals</label>
+          <input type="number" name="steals" value="<%= element.steals %>" required="true">
+        </div>
+        <div class="">
+          <label for="">blocks</label>
+          <input type="number" name="blocks" value="<%= element.blocks %>" required="true">
+        </div>
+        <div class="">
+          <label for="">personal_fouls</label>
+          <input type="number" name="personal_fouls" value="<%= element.personal_fouls %>" required="true">
+        </div>
+        <div class="">
+          <label for="">id_team</label>
+          <input type="number" name="id_team" value="<%= element.id_team %>" required="true">
+        </div>
+      <button type="submit">Update statTeam</button>
+    </form>
+    <br />
+    <a href="/statTeam">Index</a>
+  </div>
+</div>

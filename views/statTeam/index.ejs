@@ -1,0 +1,119 @@
+<h1>statTeam</h1>
+
+
+<% if (result.length == 0) { %>
+  <h4>
+    0 statTeam
+  </h4>
+<% } else { %>
+<table>
+	<thead>
+    <th>#</th>
+		<th>id</th>
+			<th>id_stat_team</th>
+			<th>place</th>
+			<th>win</th>
+			<th>lose</th>
+			<th>points</th>
+			<th>three_points</th>
+			<th>three_points_attemps</th>
+			<th>free_throws</th>
+			<th>free_throws_attempted</th>
+			<th>offensive_rebounds</th>
+			<th>defensive_rebounds</th>
+			<th>asits</th>
+			<th>turnover</th>
+			<th>steals</th>
+			<th>blocks</th>
+			<th>personal_fouls</th>
+			<th>id_team</th>
+
+		<th>created at</th>
+		<th>updated at</th>
+		<th colspan="3"></th>
+	</thead>
+
+	<tbody>
+		<% result.forEach((item, i) => { %>
+			<tr>
+				<td>
+					<%= (i + 1) %>
+				</td>
+				<td>
+					<%= item.id %>
+				</td>
+					<td>
+						<%= item.id_stat_team %>
+					</td>
+					<td>
+						<%= item.place %>
+					</td>
+					<td>
+						<%= item.win %>
+					</td>
+					<td>
+						<%= item.lose %>
+					</td>
+					<td>
+						<%= item.points %>
+					</td>
+					<td>
+						<%= item.three_points %>
+					</td>
+					<td>
+						<%= item.three_points_attemps %>
+					</td>
+					<td>
+						<%= item.free_throws %>
+					</td>
+					<td>
+						<%= item.free_throws_attempted %>
+					</td>
+					<td>
+						<%= item.offensive_rebounds %>
+					</td>
+					<td>
+						<%= item.defensive_rebounds %>
+					</td>
+					<td>
+						<%= item.asits %>
+					</td>
+					<td>
+						<%= item.turnover %>
+					</td>
+					<td>
+						<%= item.steals %>
+					</td>
+					<td>
+						<%= item.blocks %>
+					</td>
+					<td>
+						<%= item.personal_fouls %>
+					</td>
+					<td>
+						<%= item.id_team %>
+					</td>
+				<td>
+					<%= item.createdAt %>
+				</td>
+				<td>
+					<%= item.updatedAt %>
+				</td>
+				<td>
+					<a href="/statTeam/show/<%= item.id %>">Show</a>
+				</td>
+				<td>
+					<a href="/statTeam/delete/<%= item.id %>">Delete</a>
+				</td>
+        <td>
+					<a href="/statTeam/edit/<%= item.id %>">Edit</a>
+				</td>
+			</tr>
+			<% }) %>
+	</tbody>
+</table>
+
+<% } %>
+
+<br>
+<a href="/statTeam/create">New</a>
